@@ -5,9 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 </head>
 <body>
+    <div class="container">
+        <div class="wrapper">
+
+            <div class="bio">
+                <div class="propic">
+                    <img src="Pict/profile-02.png" alt="">
+                </div>
+                <div class="aboutme">
+                    <h2>who am i</h2>
+                    <h1>HELLO...</h1>
+                    <p>
+                    My name is Alfariz. I am currently based in Jakarta, where I find inspiration from both the vibrant urban life. As a final-year student pursuing my interest in Japanese Language and Culture at Darma Persada University, I am immersed in the language, rich tradition, and modernity of Japan. I am proud to mention that I have attained proficiency in the Japanese language at JLPT N2 level, allowing me to communicate effectively and appreciate the nuances of the language. In addition, I was honored to have the opportunity to intern at OZORA Publishing Company, a Japanese company that ignited my passion for Japanese, graphic, and web design.
+                    </p>
+                    <h3>MY INTEREST</h3>
+                </div>
+                <div class="interest">
+                    <img src="Pict/interest-02.png" alt="">
+                </div>
+            </div>
+
+            <div class="works">
+                <div class="title2">
+                    <img src="Pict/title2-02.png" alt="">
+                </div>
+                <div class="myworks">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="Pict/work1-02.png" alt="">
+                                <a href=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="Pict/work2-02.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="Pict/work3-02.png" alt="">
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+            <div class="contact">
+                <h2>FOR BUSINESS INQUIRIES</h2>
+                <div class="socmed">
+                    <ul>
+                        <li><img src="Pict/IG-02.png" alt=""></li>
+                        <li><img src="Pict/EMAIL-02.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+<script>
+        const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                loop: true,
+            
+                // If we need pagination
+                pagination: {
+                el: '.swiper-pagination',
+                },
+            
+                // Navigation arrows
+                navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                },
+            
+                // And if we need scrollbar
+                scrollbar: {
+                el: '.swiper-scrollbar',
+                },
+            });
+        </script>
     
+        <script>
+            // Wait for the DOM to load
+            document.addEventListener('DOMContentLoaded', function () {
+            // Initialize Swiper
+            var mySwiper = new Swiper('.swiper', {
+                // Optional: Customize the slide transition and other options here
+                // For example:
+                // direction: 'horizontal', // Slide direction ('horizontal' or 'vertical')
+                // loop: true,             // Enable loop mode
+                // autoplay: {             // Autoplay settings
+                //   delay: 3000,          // Delay between slides in milliseconds
+                //   disableOnInteraction: false // Allow autoplay to continue after user interaction
+                // },
+                
+                // Add more options as needed
+                
+                // Optional: Pagination settings (if you want to show pagination bullets)
+                pagination: {
+                el: '.swiper-pagination',
+                },
+                
+                // Optional: Navigation settings (if you want to show next/prev buttons)
+                navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                },
+            });
+            });
+</script>
 </body>
 </html>

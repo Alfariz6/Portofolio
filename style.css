@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+body img {
+    width: 100%;
+}
+
+/*------------------BIO-------------------*/
+
+.bio {
+    margin: auto;
+    height: 701px;
+    width: 1440px;
+    background-image: url(Pict/bg1-02.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: 1440px 701px;
+    display: grid; 
+    isolation: isolate;
+    background-size: cover;
+}
+
+.propic img {
+    position: relative;
+    width: 383.3704px;
+    height: 378.5438px;
+    margin-left: 150px;
+    margin-right: 41px;
+    margin-top: 150px;
+}
+
+.bio .aboutme h1 {
+    position: relative;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: left;
+    margin: auto;
+    margin-left: 566px;
+    bottom: 390px;
+}
+
+.bio .aboutme h2 {
+    position: relative;
+    font-size: 19px;
+    font-weight: 700;
+    text-align: left;
+    margin: auto;
+    margin-left: 568px;
+    bottom: 375px;
+}
+
+.bio .aboutme h3 {
+    position: relative;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: left;
+    margin: auto;
+    margin-left: 568px;
+    bottom: 395px;
+}
+
+.bio .aboutme p {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    width: 676.6853px;
+    margin: auto;
+    margin-left: 568px;
+    bottom: 405px;
+}
+
+.interest img {
+    margin: auto;
+    position: relative;
+    width: 400.0627px;
+    height: 120px;
+    margin-left: 540px;
+    bottom: 425px;
+}
+
+
+/*------------------WORKS-------------------*/
+
+.works {
+    background-position-x: center;
+    margin: auto;
+    height: 100%;
+    width: 1440px;
+    height: 1100px;
+    background-image: url(Pict/bg2-02.png);
+    background-repeat: no-repeat;
+    background-size: 1440px 1100px;
+    place-content: center;
+    background-size: cover;
+}
+
+.works .title2 img {
+    position: relative;
+    margin: 0;
+    margin-top: 50px;
+    margin-left: 570px;
+    width: 356.5708px;
+    height: 133.4524px;
+}
+
+
+
+/*------------------CONTACT-------------------*/
+
+.contact {
+    background-position-x: center;
+    margin: auto;
+    width: 1440px;
+    height: 220.3043px;
+    background-image: url(Pict/bg3-02.png);
+    background-repeat: no-repeat;
+    background-size: 1440px 220.3043px;
+    place-content: center;
+    background-size: cover;
+}
+
+.contact h2 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    top: 40px;
+}
+
+.contact .socmed img {
+    width: 71px;
+    height: 71px;
+}
+
+.socmed {
+    position: relative;
+    margin: 0;
+    margin-top: 50px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+
+}
+
+.socmed ul {
+    list-style: none; 
+    display: flex; 
+    gap: 10px; 
+}
+
+.socmed li {
+    flex: 1;
+    -webkit-transition-property: transform;
+    transition-property: transform; 
+}
+
+.socmed li :hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+}

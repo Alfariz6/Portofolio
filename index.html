@@ -35,29 +35,28 @@
                     <img src="Pict/title2-02.png" alt="">
                 </div>
                 <div class="myworks">
-                    <div class="swiper">
+                    <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                            <!-- Slides -->
                             <div class="swiper-slide">
                                 <a href="Pict/works3-02.png" target="_blank">
-                                    <img src="Pict/work1-02.png" alt="thumbnail">
+                                    <img src="Pict/work01-02.png" alt="thumbnail" width="1122.9827" height="757.9093">
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="Pict/works2-02.png" target="_blank">
-                                    <img src="Pict/work2-02.png" alt="thumbnail">
+                                    <img src="Pict/work02-02.png" alt="thumbnail" width="1122.9827" height="757.9093">
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="Pict/works1-02.png" target="_blank">
-                                    <img src="Pict/work3-02.png" alt="thumbnail">
+                                    <img src="Pict/work03-02.png" alt="thumbnail" width="1122.9827" height="757.9093">
                                 </a>
-                            </div>  
+                            </div>
                         </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
-                    <div class="pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
                 </div>
             </div>
 
@@ -65,8 +64,8 @@
                 <h2>FOR BUSINESS INQUIRIES</h2>
                 <div class="socmed">
                     <ul>
-                        <li><img src="Pict/IG-02.png" alt=""></li>
-                        <li><img src="Pict/EMAIL-02.png" alt=""></li>
+                        <li><a href="https://instagram.com/sean.frz?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"><img src="Pict/IG-02.png" alt=""></a></li>
+                        <li><a href="mailto:alfariz6109@gmail.com" class="email-button"><img src="Pict/EMAIL-02.png" alt=""></a></li>
                     </ul>
                 </div>
             </div>
@@ -75,57 +74,21 @@
     </div>
 
 
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
 <script>
-        const swiper = new Swiper('.swiper', {
-                // Optional parameters
-                loop: true,
-            
-                // If we need pagination
-                pagination: {
-                el: '.swiper-pagination',
-                },
-            
-                // Navigation arrows
-                navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-                },
-            
-                // And if we need scrollbar
-                scrollbar: {
-                el: '.swiper-scrollbar',
-                },
-            });
-        </script>
-    
-        <script>
-            // Wait for the DOM to load
-            document.addEventListener('DOMContentLoaded', function () {
-            // Initialize Swiper
-            var mySwiper = new Swiper('.swiper', {
-                // Optional: Customize the slide transition and other options here
-                // For example:
-                // direction: 'horizontal', // Slide direction ('horizontal' or 'vertical')
-                // loop: true,             // Enable loop mode
-                // autoplay: {             // Autoplay settings
-                //   delay: 3000,          // Delay between slides in milliseconds
-                //   disableOnInteraction: false // Allow autoplay to continue after user interaction
-                // },
-                
-                // Add more options as needed
-                
-                // Optional: Pagination settings (if you want to show pagination bullets)
-                pagination: {
-                el: '.swiper-pagination',
-                },
-                
-                // Optional: Navigation settings (if you want to show next/prev buttons)
-                navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-                },
-            });
-            });
+    var swiper = new Swiper(".mySwiper", {
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+    });
 </script>
 </body>
 </html>

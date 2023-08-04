@@ -30,6 +30,7 @@ body img {
     background-size: cover;
 }
 
+
 .propic img {
     position: relative;
     width: 383.3704px;
@@ -37,6 +38,9 @@ body img {
     margin-left: 150px;
     margin-right: 41px;
     margin-top: 150px;
+    opacity: 0;
+    transform: scale(0);
+    animation: scaleIn 1s forwards 1.2s;
 }
 
 .bio .aboutme h1 {
@@ -47,6 +51,9 @@ body img {
     margin: auto;
     margin-left: 566px;
     bottom: 390px;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInUp 1s forwards 0.3s;
 }
 
 .bio .aboutme h2 {
@@ -57,6 +64,9 @@ body img {
     margin: auto;
     margin-left: 568px;
     bottom: 375px;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInUp 1s forwards 0.5s;
 }
 
 .bio .aboutme h3 {
@@ -67,6 +77,9 @@ body img {
     margin: auto;
     margin-left: 568px;
     bottom: 395px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards 0.9s;
 }
 
 .bio .aboutme p {
@@ -78,6 +91,9 @@ body img {
     margin: auto;
     margin-left: 568px;
     bottom: 405px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards 0.7s;
 }
 
 .interest img {
@@ -87,6 +103,30 @@ body img {
     height: 120px;
     margin-left: 540px;
     bottom: 425px;
+    opacity: 0;
+    transform: rotateY(180deg) scale(0);
+    animation: rotateAndScaleIn 1s forwards 1.5s;
+}
+
+@keyframes fadeInUp {
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    to {
+    opacity: 1;
+    transform: scale(1);
+    }
+}
+
+@keyframes rotateAndScaleIn {
+    to {
+    opacity: 1;
+    transform: rotateY(0) scale(1);
+    }
 }
 
 
@@ -117,59 +157,68 @@ body img {
 .myworks {
     overflow: hidden;
     position: relative;
+    margin-top: 15px;
+}
+
+.swiper {
+    width: 80%;
+    height: 80%;
 }
 
 .swiper-wrapper {
-    display: flex;
-    width: 300%; 
-    scroll-snap-type: x mandatory;
-    transition: transform 0.3s ease;
+    transition: transform 0.6s ease;
 }
 
 .swiper-slide {
-    flex: 0 0 33.33%; 
-    scroll-snap-align: center;
-}
-
-
-.pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.pagination-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #fff; 
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-
-.swiper-button-prev, .swiper-button-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-    background-color: #444; 
-    color: #fff;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
+.swiper-slide:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    z-index: 1; 
+}
+
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next,
 .swiper-button-prev {
-    left: 10px;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    transform: translateY(-65%);
+    color: #ffffff !important;
+    fill: rgb(255, 255, 255) !important;
+    stroke: rgb(255, 255, 255) !important;
+    transition: background-color 0.3s ease;
 }
 
-.swiper-button-next {
-    right: 10px;
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
+.swiper-pagination-bullet {
+    background-color: #000; 
+    width: 14px;
+    height: 14px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fff; 
+    transform: scale(10.3); 
+}
 
 /*------------------CONTACT-------------------*/
 
